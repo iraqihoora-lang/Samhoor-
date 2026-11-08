@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>المصممة رهف | دار سمحور للنشر الرقمي والأدب</title>
+  <meta name="description" content="الموقع الرسمي للمصممة رهف - دار سمحور: منصة رقمية للأدب العربي، قراءة مجانية، وتحميل مباشر لروائع أمهات الكتب.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-cream: #F5F4EE;
+      --bg-surface: #FAF9F5;
+      --bg-card: #FFFFFF;
+      --bg-olive-light: #EBF0E8;
+      --bg-olive-soft: #D9E1D5;
+      --olive-primary: #728369;
+      --olive-dark: #3F4B3A;
+      --olive-deep: #252D22;
+      --terracotta: #D1663C;
+      --terracotta-hover: #B8532C;
+      --terracotta-light: #F8EFEA;
+      --ink: #242921;
+      --ink-muted: #677161;
+      --border-warm: #E2DFD2;
+      --border-olive: #C9D4C4;
+      --radius-organic-lg: 48px 18px 48px 18px;
+      --radius-organic-md: 28px 12px 28px 12px;
+      --radius-organic-pill: 999px;
+      --shadow-soft: 0 16px 36px -12px rgba(63, 75, 58, 0.12);
+      --shadow-hover: 0 24px 48px -14px rgba(63, 75, 58, 0.22);
+      --font-heading: 'Tajawal', sans-serif;
+      --font-body: 'IBM Plex Sans Arabic', sans-serif;
+      --font-editorial: 'Newsreader', serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-cream);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+      background-image: radial-gradient(var(--border-warm) 0.8px, transparent 0.8px);
+      background-size: 28px 28px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .nav-wrapper {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(245, 244, 238, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-warm);
+      padding: 14px 0;
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--ink);
+    }
+
+    .brand-emblem {
+      width: 44px;
+      height: 44px;
+      background: var(--olive-primary);
+      color: #fff;
+      border-radius: 50% 12px 50% 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.25rem;
+      box-shadow: 0 6px 14px rgba(114, 131, 105, 0.35);
+    }
+
+    .brand-names {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.25rem;
+      line-height: 1.2;
+      color: var(--olive-deep);
+    }
+
+    .brand-sub {
+      font-size: 0.75rem;
+      color: var(--terracotta);
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--ink);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .nav-link:hover {
+      color: var(--terracotta);
+    }
+
+    .btn-terracotta {
+      background: var(--terracotta);
+      color: #FFFFFF !important;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 10px 22px;
+      border-radius: var(--radius-organic-pill);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 20px rgba(209, 102, 60, 0.3);
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-terracotta:hover {
+      background: var(--terracotta-hover);
+      transform: translateY(-2px);
+    }
+
+    @media (min-width: 860px) {
+      .nav-links { display: flex; }
+    }
+
+    .hero-section {
+      padding: 30px 0 60px;
+    }
+
+    .hero-frame {
+      background: var(--bg-olive-light);
+      border: 1px solid var(--border-olive);
+      border-radius: 42px 18px 42px 18px;
+      padding: 40px 24px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+    }
+
+    @media (min-width: 992px) {
+      .hero-frame {
+        padding: 64px 54px;
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 50px;
+        align-items: center;
+      }
+    }
+
+    .hero-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #FFFFFF;
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--olive-dark);
+      border: 1px solid var(--border-olive);
+      margin-bottom: 20px;
+    }
+
+    .hero-badge-pill .dot {
+      width: 8px;
+      height: 8px;
+      background: var(--terracotta);
+      border-radius: 50%;
+    }
+
+    .hero-headline {
+      font-family: var(--font-heading);
+      font-size: 2.2rem;
+      font-weight: 900;
+      line-height: 1.25;
+      color: var(--olive-deep);
+      margin-bottom: 18px;
+    }
+
+    @media (min-width: 768px) {
+      .hero-headline { font-size: 3.2rem; }
+    }
+
+    .hero-headline span.accent {
+      color: var(--terracotta);
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--ink-muted);
+      line-height: 1.8;
+      margin-bottom: 30px;
+      max-width: 580px;
+    }
+
+    .hero-btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .btn-olive-soft {
+      background: #FFFFFF;
+      color: var(--olive-dark);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 12px 24px;
+      border-radius: var(--radius-organic-pill);
+      text-decoration: none;
+      border: 1px solid var(--border-olive);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hero-media-showcase {
+      margin-top: 36px;
+      position: relative;
+    }
+
+    @media (min-width: 992px) {
+      .hero-media-showcase { margin-top: 0; }
+    }
+
+    .media-card-organic {
+      position: relative;
+      border-radius: 46px 16px 46px 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 45px -10px rgba(37, 45, 34, 0.25);
+      background: #000;
+      aspect-ratio: 4 / 3.4;
+      border: 4px solid #FFFFFF;
+    }
+
+    .media-card-organic video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .media-overlay-tag {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      background: rgba(255, 255, 255, 0.92);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--olive-deep);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .stamp-badge {
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      z-index: 2;
+      width: 96px;
+      height: 96px;
+      background: var(--terracotta);
+      color: #FFFFFF;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 0.72rem;
+      font-weight: 800;
+      line-height: 1.2;
+      border: 3px solid #FAF9F5;
+    }
+
+    .features-strip {
+      padding: 20px 0 50px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    @media (min-width: 640px) {
+      .features-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .feature-organic-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-warm);
+      border-radius: var(--radius-organic-md);
+      padding: 24px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .feature-icon-circle {
+      width: 52px;
+      height: 52px;
+      flex-shrink: 0;
+      background: var(--bg-olive-soft);
+      color: var(--olive-dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+    }
+
+    .feature-content h4 {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+      color: var(--olive-deep);
+    }
+
+    .feature-content p {
+      font-size: 0.88rem;
+      color: var(--ink-muted);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 40px;
+    }
+
+    .section-subtitle {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--terracotta);
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--olive-deep);
+      margin-bottom: 12px;
+    }
+
+    .filter-pills-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 35px;
+    }
+
+    .filter-btn {
+      background: #FFFFFF;
+      border: 1px solid var(--border-warm);
+      color: var(--ink-muted);
+      padding: 8px 20px;
+      border-radius: 999px;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 0.88rem;
+      cursor: pointer;
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--olive-primary);
+      color: #FFFFFF;
+      border-color: var(--olive-primary);
+    }
+
+    .books-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 26px;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: 640px) {
+      .books-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (min-width: 1024px) {
+      .books-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .book-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-warm);
+      border-radius: 36px 14px 36px 14px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.35s ease;
+    }
+
+    .book-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--olive-primary);
+    }
+
+    .book-cover-stage {
+      height: 220px;
+      background: var(--bg-olive-light);
+      border-radius: 24px 10px 24px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      perspective: 800px;
+      margin-bottom: 20px;
+    }
+
+    .book-3d-model {
+      width: 135px;
+      height: 185px;
+      position: relative;
+      transform-style: preserve-3d;
+      transform: rotateY(-22deg) rotateX(6deg);
+      transition: transform 0.5s ease;
+      box-shadow: 10px 14px 30px rgba(37, 45, 34, 0.28);
+      border-radius: 4px 10px 10px 4px;
+    }
+
+    .book-card:hover .book-3d-model {
+      transform: rotateY(-8deg) rotateX(2deg) scale(1.05);
+    }
+
+    .book-front-cover {
+      position: absolute;
+      inset: 0;
+      border-radius: 4px 10px 10px 4px;
+      padding: 16px 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    .book-front-cover .mini-title {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 0.95rem;
+    }
+
+    .book-front-cover .mini-author {
+      font-size: 0.72rem;
+      opacity: 0.9;
+    }
+
+    .theme-cover-1 { background: linear-gradient(135deg, #728369 0%, #465540 100%); }
+    .theme-cover-2 { background: linear-gradient(135deg, #D1663C 0%, #8E3E1E 100%); }
+    .theme-cover-3 { background: linear-gradient(135deg, #4A5B6C 0%, #283744 100%); }
+    .theme-cover-4 { background: linear-gradient(135deg, #8B6B58 0%, #543D2F 100%); }
+    .theme-cover-5 { background: linear-gradient(135deg, #6C7A62 0%, #364230 100%); }
+    .theme-cover-6 { background: linear-gradient(135deg, #A85A3C 0%, #612D18 100%); }
+
+    .book-meta-badge {
+      display: inline-block;
+      background: var(--bg-cream);
+      color: var(--olive-dark);
+      border: 1px solid var(--border-warm);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+
+    .book-card-title {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: var(--olive-deep);
+      margin-bottom: 4px;
+    }
+
+    .book-card-author {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--terracotta);
+      margin-bottom: 12px;
+    }
+
+    .book-card-snippet {
+      font-size: 0.88rem;
+      color: var(--ink-muted);
+      margin-bottom: 20px;
+    }
+
+    .book-action-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      padding-top: 14px;
+      border-top: 1px dashed var(--border-warm);
+    }
+
+    .btn-read-modal {
+      background: var(--olive-primary);
+      color: #FFFFFF;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-download-direct {
+      background: var(--bg-cream);
+      color: var(--ink);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border-warm);
+      cursor: pointer;
+    }
+
+    .services-banner {
+      background: var(--olive-deep);
+      color: #FAF9F5;
+      border-radius: var(--radius-organic-lg);
+      padding: 44px 24px;
+      margin: 60px 0;
+    }
+
+    @media (min-width: 860px) {
+      .services-banner {
+        padding: 60px;
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 40px;
+        align-items: center;
+      }
+    }
+
+    .services-banner h3 {
+      font-family: var(--font-heading);
+      font-size: 1.85rem;
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+
+    .services-banner p {
+      font-size: 0.98rem;
+      color: #C9D4C4;
+      margin-bottom: 24px;
+    }
+
+    .contact-card-box {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 32px 14px 32px 14px;
+      padding: 30px 24px;
+      text-align: center;
+    }
+
+    .contact-card-phone {
+      font-family: monospace;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #FAF9F5;
+      margin-bottom: 16px;
+      display: block;
+      direction: ltr;
+    }
+
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(20, 25, 18, 0.75);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal-paper-window {
+      background: var(--bg-surface);
+      width: 100%;
+      max-width: 820px;
+      max-height: 90vh;
+      border-radius: 36px 14px 36px 14px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .modal-header {
+      padding: 18px 24px;
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border-warm);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .modal-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-font-size, .btn-theme-toggle, .btn-close-modal {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid var(--border-warm);
+      background: var(--bg-cream);
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .modal-reading-body {
+      padding: 30px 26px;
+      overflow-y: auto;
+      font-family: var(--font-editorial), var(--font-body);
+      font-size: 1.1rem;
+      line-height: 2.1;
+      color: #2F332C;
+      white-space: pre-line;
+      text-align: justify;
+      background: #FAF9F5;
+    }
+
+    .modal-reading-body.theme-sepia { background: #F5EEDB; color: #433422; }
+    .modal-reading-body.theme-dark { background: #1F241C; color: #D8DFD5; }
+
+    .modal-footer {
+      padding: 14px 24px;
+      background: #FFFFFF;
+      border-top: 1px solid var(--border-warm);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .site-footer {
+      background: #FFFFFF;
+      border-top: 1px solid var(--border-warm);
+      padding: 40px 0 26px;
+      text-align: center;
+    }
+
+    .whatsapp-float-widget {
+      position: fixed;
+      bottom: 22px;
+      left: 22px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .whatsapp-pulse-btn {
+      width: 58px;
+      height: 58px;
+      background: #25D366;
+      color: #FFFFFF;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 24px rgba(37, 211, 102, 0.4);
+    }
+
+    .whatsapp-tooltip {
+      background: #FFFFFF;
+      color: var(--olive-deep);
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border-warm);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav-wrapper">
+    <div class="container nav-container">
+      <a href="#" class="brand-group">
+        <div class="brand-emblem">ر</div>
+        <div class="brand-names">
+          <span class="brand-title">المصممة رهف</span>
+          <span class="brand-sub">SAMHOOR • دار سمحور</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#library" class="nav-link">المكتبة الرقمية</a></li>
+        <li><a href="#designer" class="nav-link">خدمات التصميم</a></li>
+        <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/989385611543?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A7%D9%84%D9%85%D8%B5%D9%85%D9%85%D8%A9%20%D8%B1%D9%87%D9%81%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%88%D8%A7%D9%84%D9%85%D9%83%D8%AA%D8%A8%D8%A9%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9" target="_blank" rel="noopener noreferrer" class="btn-terracotta">
+          <span>تواصل واتساب</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-frame">
+          <div class="hero-text-content">
+            <div class="hero-badge-pill">
+              <span class="dot"></span>
+              <span>دار سمحور للنشر الرقمي والتصميم الفاخر</span>
+            </div>
+            <h1 class="hero-headline">
+              أصالة الكلمة العربية <br>
+              مع <span class="accent">رؤية بصرية معاصرة.</span>
+            </h1>
+            <p class="hero-desc">
+              مرحباً بكم في فضاء <strong>المصممة رهف</strong>. منصة ثقافية عربية تجمع بين أمهات الكتب الأدبية الخالدة بجودة طباعية رقمية، وبين أرقى تصاميم الهويات البصرية والكتب الإلكترونية للتحميل المباشر والقراءة الحرة.
+            </p>
+            <div class="hero-btn-group">
+              <a href="#library" class="btn-terracotta">تصفح روائع الكتب</a>
+              <a href="https://wa.me/989385611543?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A7%D9%84%D9%85%D8%B5%D9%85%D9%85%D8%A9%20%D8%B1%D9%87%D9%81%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%AE%D8%A7%D8%B5" target="_blank" rel="noopener noreferrer" class="btn-olive-soft">طلب تصميم خاص ←</a>
+            </div>
+          </div>
+
+          <div class="hero-media-showcase">
+            <div class="stamp-badge">
+              <span>سمحور</span>
+              <span>SAMHOOR</span>
+              <span>100% حر</span>
+            </div>
+            <div class="media-card-organic">
+              <video autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=800&q=80">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-turning-pages-of-an-old-book-in-a-library-42874-large.mp4" type="video/mp4">
+              </video>
+              <div class="media-overlay-tag">
+                <span>روائع التراث الإنساني الخالد</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-strip">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-organic-card">
+            <div class="feature-icon-circle">📜</div>
+            <div class="feature-content">
+              <h4>نصوص محققة وموثقة</h4>
+              <p>مأخوذة من أنقى الطبعات التاريخية مع مراجعة التدقيق الإملائي.</p>
+            </div>
+          </div>
+          <div class="feature-organic-card">
+            <div class="feature-icon-circle">📖</div>
+            <div class="feature-content">
+              <h4>قراءة رقمية مريحة</h4>
+              <p>نافذة قراءة تفاعلية قابلة لتعديل الخط وتبديل المظهر الورقي أو الداكن.</p>
+            </div>
+          </div>
+          <div class="feature-organic-card">
+            <div class="feature-icon-circle">⚡</div>
+            <div class="feature-content">
+              <h4>تحميل مباشر 100%</h4>
+              <p>احفظ نسختك بضغطة زر واحدة بدون تسجيل بصيغة نصية نقية.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="library" class="library-section" style="padding: 40px 0 70px;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">أمهات الكتب العربية للتحميل والقراءة</span>
+          <h2 class="section-title">خزانة دار سمحور التراثية</h2>
+        </div>
+
+        <div class="filter-pills-bar">
+          <button class="filter-btn active" onclick="filterBooks('all', this)">كل الكتب (6)</button>
+          <button class="filter-btn" onclick="filterBooks('literature', this)">أدب وشعر</button>
+          <button class="filter-btn" onclick="filterBooks('philosophy', this)">فلسفة وعلم اجتماع</button>
+          <button class="filter-btn" onclick="filterBooks('wisdom', this)">حكمة ورسائل</button>
+        </div>
+
+        <div class="books-grid">
+          <article class="book-card" data-category="literature">
+            <div>
+              <div class="book-cover-stage">
+                <div class="book-3d-model">
+                  <div class="book-front-cover theme-cover-1">
+                    <span>❦</span>
+                    <div>
+                      <div class="mini-title">الأجنحة المتكسرة</div>
+                      <div class="mini-author">جبران خليل جبران</div>
+                    </div>
+                    <span style="font-size:0.65rem;">دار سمحور</span>
+                  </div>
+                </div>
+              </div>
+              <span class="book-meta-badge">رواية أدبية • 1912</span>
+              <h3 class="book-card-title">الأجنحة المتكسرة</h3>
+              <div class="book-card-author">جبران خليل جبران</div>
+              <p class="book-card-snippet">أشهر روايات الحب العذري وأوجاع الروح في الأدب المهجري الحديث.</p>
+            </div>
+            <div class="book-action-buttons">
+              <button class="btn-read-modal" onclick="openReader(0)">اقرأ الآن</button>
+              <button class="btn-download-direct" onclick="downloadBook(0)">تحميل مجاني</button>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="philosophy">
+            <div>
+              <div class="book-cover-stage">
+                <div class="book-3d-model">
+                  <div class="book-front-cover theme-cover-2">
+                    <span>❖</span>
+                    <div>
+                      <div class="mini-title">مقدمة ابن خلدون</div>
+                      <div class="mini-author">ابن خلدون</div>
+                    </div>
+                    <span style="font-size:0.65rem;">دار سمحور</span>
+                  </div>
+                </div>
+              </div>
+              <span class="book-meta-badge">علم الاجتماع • 1377</span>
+              <h3 class="book-card-title">مقدمة ابن خلدون</h3>
+              <div class="book-card-author">عبد الرحمن بن خلدون</div>
+              <p class="book-card-snippet">حجر الأساس في علم العمران البشري والاجتماع وتطور الدول.</p>
+            </div>
+            <div class="book-action-buttons">
+              <button class="btn-read-modal" onclick="openReader(1)">اقرأ الآن</button>
+              <button class="btn-download-direct" onclick="downloadBook(1)">تحميل مجاني</button>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="wisdom">
+            <div>
+              <div class="book-cover-stage">
+                <div class="book-3d-model">
+                  <div class="book-front-cover theme-cover-3">
+                    <span>❧</span>
+                    <div>
+                      <div class="mini-title">طوق الحمامة</div>
+                      <div class="mini-author">ابن حزم الأندلسي</div>
+                    </div>
+                    <span style="font-size:0.65rem;">دار سمحور</span>
+                  </div>
+                </div>
+              </div>
+              <span class="book-meta-badge">أدب أندلسي • 1022</span>
+              <h3 class="book-card-title">طوق الحمامة في الألفة والأُلاّف</h3>
+              <div class="book-card-author">ابن حزم الأندلسي</div>
+              <p class="book-card-snippet">أبدع ما كتب الأندلسيون في فلسفة المحبة وأعراضها ونفسيات العشاق.</p>
+            </div>
+            <div class="book-action-buttons">
+              <button class="btn-read-modal" onclick="openReader(2)">اقرأ الآن</button>
+              <button class="btn-download-direct" onclick="downloadBook(2)">تحميل مجاني</button>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="philosophy">
+            <div>
+              <div class="book-cover-stage">
+                <div class="book-3d-model">
+                  <div class="book-front-cover theme-cover-4">
+                    <span>☼</span>
+                    <div>
+                      <div class="mini-title">حي بن يقظان</div>
+                      <div class="mini-author">ابن طفيل الأندلسي</div>
+                    </div>
+                    <span style="font-size:0.65rem;">دار سمحور</span>
+                  </div>
+                </div>
+              </div>
+              <span class="book-meta-badge">رواية فلسفية • 1180</span>
+              <h3 class="book-card-title">حي بن يقظان</h3>
+              <div class="book-card-author">ابن طفيل الأندلسي</div>
+              <p class="book-card-snippet">القصة الفلسفية الأعمق حول ارتقاء العقل الإنساني الفطري نحو المعرفة.</p>
+            </div>
+            <div class="book-action-buttons">
+              <button class="btn-read-modal" onclick="openReader(3)">اقرأ الآن</button>
+              <button class="btn-download-direct" onclick="downloadBook(3)">تحميل مجاني</button>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="wisdom">
+            <div>
+              <div class="book-cover-stage">
+                <div class="book-3d-model">
+                  <div class="book-front-cover theme-cover-5">
+                    <span>✦</span>
+                    <div>
+                      <div class="mini-title">النظرات</div>
+                      <div class="mini-author">المنفلوطي</div>
+                    </div>
+                    <span style="font-size:0.65rem;">دار سمحور</span>
+                  </div>
+                </div>
+              </div>
+              <span class="book-meta-badge">مقالات أدبية • 1910</span>
+              <h3 class="book-card-title">النظرات</h3>
+              <div class="book-card-author">مصطفى لطفي المنفلوطي</div>
+              <p class="book-card-snippet">أصفى مقالات الأدب الوجداني والاجتماعي بأسلوب إنشائي ساحر.</p>
+            </div>
+            <div class="book-action-buttons">
+              <button class="btn-read-modal" onclick="openReader(4)">اقرأ الآن</button>
+              <button class="btn-download-direct" onclick="downloadBook(4)">تحميل مجاني</button>
+            </div>
+          </article>
+
+          <article class="book-card" data-category="literature">
+            <div>
+              <div class="book-cover-stage">
+                <div class="book-3d-model">
+                  <div class="book-front-cover theme-cover-6">
+                    <span>⚜</span>
+                    <div>
+                      <div class="mini-title">ديوان المتنبي</div>
+                      <div class="mini-author">أبو الطيب المتنبي</div>
+                    </div>
+                    <span style="font-size:0.65rem;">دار سمحور</span>
+                  </div>
+                </div>
+              </div>
+              <span class="book-meta-badge">شعر عربي • 965</span>
+              <h3 class="book-card-title">عيون ديوان المتنبي</h3>
+              <div class="book-card-author">أبو الطيب المتنبي</div>
+              <p class="book-card-snippet">روائع الحكمة والفخر والهمة العالية في أبلغ ما نطقت به لغة الضاد.</p>
+            </div>
+            <div class="book-action-buttons">
+              <button class="btn-read-modal" onclick="openReader(5)">اقرأ الآن</button>
+              <button class="btn-download-direct" onclick="downloadBook(5)">تحميل مجاني</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="designer" class="container">
+      <div class="services-banner" id="contact">
+        <div>
+          <h3>هل تريد تصميم كتابك أو هويتك الثقافية بلمسة فنية فريدة؟</h3>
+          <p>بصفتي <strong>المصممة رهف</strong>، أقدم استشارات وحلولاً متكاملة لتصميم أغلفة الكتب الورقية والإلكترونية وتنسيق الهويات البصرية.</p>
+        </div>
+        <div class="contact-card-box">
+          <h4>استشارة تصميم فورية</h4>
+          <div class="contact-card-phone">+98 938 561 1543</div>
+          <a href="https://wa.me/989385611543?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A7%D9%84%D9%85%D8%B5%D9%85%D9%85%D8%A9%20%D8%B1%D9%87%D9%81%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%88%D8%A7%D9%84%D9%85%D9%83%D8%AA%D8%A8%D8%A9%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9" target="_blank" rel="noopener noreferrer" class="btn-terracotta" style="width:100%; justify-content:center;">
+            <span>بدء محادثة واتساب الآن</span>
+          </a>
+          <div style="margin-top:12px; font-size:0.8rem;">iraqihoora@gmail.com | www.samhoor.com</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2025 المصممة رهف • دار سمحور (www.samhoor.com) | +98 938 561 1543</div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/989385611543?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A7%D9%84%D9%85%D8%B5%D9%85%D9%85%D8%A9%20%D8%B1%D9%87%D9%81%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%AA%D8%B5%D9%85%D9%8A%D9%85" class="whatsapp-float-widget" target="_blank" rel="noopener noreferrer">
+    <span class="whatsapp-tooltip">محادثة المصممة رهف</span>
+    <div class="whatsapp-pulse-btn">💬</div>
+  </a>
+
+  <div class="modal-overlay" id="readingModal" onclick="closeReaderOnBackdrop(event)">
+    <div class="modal-paper-window" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div>
+          <h3 id="modalBookTitle">عنوان الكتاب</h3>
+          <span id="modalBookAuthor" style="font-size:0.8rem; color:var(--terracotta);">المؤلف</span>
+        </div>
+        <div class="modal-controls">
+          <button class="btn-font-size" onclick="adjustFontSize(1)">A+</button>
+          <button class="btn-font-size" onclick="adjustFontSize(-1)">A-</button>
+          <button class="btn-theme-toggle" onclick="cycleModalTheme()">🎨</button>
+          <button class="btn-close-modal" onclick="closeReader()">✕</button>
+        </div>
+      </div>
+      <div class="modal-reading-body" id="modalContentArea"></div>
+      <div class="modal-footer">
+        <span style="font-size:0.8rem;">دار سمحور للنشر الرقمي</span>
+        <button class="btn-terracotta" id="modalDownloadBtn">تحميل هذا الكتاب</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const BOOKS_DATABASE = [
+      {
+        title: "الأجنحة المتكسرة",
+        author: "جبران خليل جبران",
+        year: "1912",
+        text: "كنتُ في الثامنة عشرة من عمري عندما فتح الحب عينيَّ بأشعته السحرية، ولمس نفسي بأصابعه النارية، وكانت سلمى كرامة أول امرأة أوقظت روحي بمحاسنها ومشت أمامي في موكب الصبوة الملوكي.\n\nإن الصبا هو تلك الحديقة الفيحاء التي تنبت فيها أزهار المحبة العذبة، وتفيض في أرجائها ترانيم الشوق الأبدي. عندما جلستُ إلى جانب سلمى في بستان والدها لأول مرة، شعرتُ وكأن قوة خفية قد انتزعت من صدري كل هواجس الشباب، ولم تبقِ إلا خشوعاً عميقاً في حضرة الجمال الإلهي."
+      },
+      {
+        title: "مقدمة ابن خلدون",
+        author: "عبد الرحمن بن خلدون",
+        year: "1377",
+        text: "اعلم أن فن التاريخ فن عزيز المذهب، جم الفوائد، شريف الغاية؛ إذ هو يوقفنا على أحوال الماضين من الأمم في أخلاقهم، والأنبياء في سيرهم، والملوك في دولهم وسياستهم، حتى تتم فائدة الاقتداء في ذلك لمن يرومه في أحوال الدين والدنيا.\n\nواعلم أن الاجتماع الإنساني ضروري، ويعبر الحكماء عن هذا بقولهم: الإنسان مدني بالطبع، أي لا بد له من الاجتماع الذي هو المدنية في اصطلاحهم، وهو معنى العمران."
+      },
+      {
+        title: "طوق الحمامة في الألفة والأُلاّف",
+        author: "ابن حزم الأندلسي",
+        year: "1022",
+        text: "الحب – أعزك الله – أوله هزل وآخره جد. دقت معانيه لجلالتها عن أن توصف، فلا تدرك حقيقتها إلا بالمعاناة. وليس بمنكر في الديانة ولا بمحظور في الشريعة، إذ القلوب بيد مقلبها.\n\nوللحب علامات يقفوها الفطن، ويهتدي إليها الذكي؛ فأولها إدمان النظر، والعين باب النفس الشارع، وهي المنقبة عن سرائرها والمعربة عن مكنوناتها."
+      },
+      {
+        title: "حي بن يقظان",
+        author: "ابن طفيل الأندلسي",
+        year: "1180",
+        text: "ذكر سلفنا الصالح أن جزيرة من جزائر الهند التي تحت خط الاستواء،نشأ فيها طفل بين ظباء الوحش تدعى أمه الرضاعية ظبية. فلما كبر الصبي وأدرك قواه، تدرج بفطنته وعقله من ملاحظة المحسوسات إلى استنتاج العلل والمعلولات، حتى اهتدى بذاته إلى أن لهذا العالم صانعاً حكيماً قديراً واحداً."
+      },
+      {
+        title: "النظرات",
+        author: "مصطفى لطفي المنفلوطي",
+        year: "1910",
+        text: "ليس الإحسان أن تعطي البائس درهماً تشتري به راحته ساعة من نهار، بل الإحسان أن تأخذ بيده وتنتشله من وهدة الشقاء التي تردى فيها، وأن تعلمه كيف يعيش بكرامة جهده وعرق جبينه.\n\nإن الحرية شمس يجب أن تشرق في كل نفس، فمن عاش محروماً منها عاش في ظلمة حالكة."
+      },
+      {
+        title: "عيون ديوان المتنبي",
+        author: "أبو الطيب المتنبي",
+        year: "965",
+        text: "عَـلَى قَـدْرِ أَهْلِ العَزْمِ تَأْتِي العَزَائِمُ\nوَتَأْتِي عَلَى قَـدْرِ الكِرَامِ المَكَارِمُ\n\nوَتَعْظُمُ فِي عَيْنِ الصَّغِيرِ صِغَارُهَا\nوَتَصْغُرُ فِي عَيْنِ العَظِيمِ العَظَائِمُ\n\nالخَيْلُ وَاللّيْلُ وَالبَيْداءُ تَعرِفُني\nوَالسّيفُ وَالرّمحُ وَالقِرْطاسُ وَالقَلَمُ"
+      }
+    ];
+
+    function filterBooks(category, btnElement) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btnElement.classList.add('active');
+      document.querySelectorAll('.book-card').forEach(card => {
+        card.style.display = (category === 'all' || card.getAttribute('data-category') === category) ? 'flex' : 'none';
+      });
+    }
+
+    let currentFontSize = 18;
+    const themes = ['', 'theme-sepia', 'theme-dark'];
+    let currentThemeIndex = 0;
+
+    function openReader(index) {
+      const book = BOOKS_DATABASE[index];
+      document.getElementById('modalBookTitle').textContent = book.title;
+      document.getElementById('modalBookAuthor').textContent = book.author + ' (' + book.year + ')';
+      document.getElementById('modalContentArea').textContent = book.text;
+      document.getElementById('modalDownloadBtn').onclick = function() { downloadBook(index); };
+      document.getElementById('readingModal').classList.add('active');
+    }
+
+    function closeReader() {
+      document.getElementById('readingModal').classList.remove('active');
+    }
+
+    function closeReaderOnBackdrop(e) {
+      if (e.target.id === 'readingModal') closeReader();
+    }
+
+    function adjustFontSize(delta) {
+      currentFontSize = Math.min(26, Math.max(14, currentFontSize + delta * 2));
+      document.getElementById('modalContentArea').style.fontSize = currentFontSize + 'px';
+    }
+
+    function cycleModalTheme() {
+      currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+      document.getElementById('modalContentArea').className = 'modal-reading-body ' + themes[currentThemeIndex];
+    }
+
+    function downloadBook(index) {
+      const book = BOOKS_DATABASE[index];
+      const header = "دار سمحور للنشر الرقمي | المصممة رهف\nwww.samhoor.com | +989385611543\nالكتاب: " + book.title + "\n\n";
+      const blob = new Blob([header + book.text], { type: 'text/plain;charset=utf-8' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = book.title + '.txt';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+  </script>
+</body>
+  </html>
